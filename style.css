@@ -32,3 +32,32 @@ width:100%;
     transform: translateX(-100%);
   }
 }
+
+
+.elem .moving{
+  transform: translate(0,-45%) scaleY(0);
+
+
+}
+
+.elem:hover .moving{
+  transform: translate(0,-45%) scaleY(1);
+ 
+
+}
+
+.elem h1{
+  color: #FFF;
+  font-size: 4vw;
+}
+
+.elem:hover h1{
+  font-size: 5vw;
+ font-style: italic;
+ transition: all ease 0.5s;
+ 
+}
+
+.blur{
+  transform: translate(-50%,-50%);
+}

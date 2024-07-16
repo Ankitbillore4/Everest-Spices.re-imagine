@@ -33,3 +33,17 @@ tl.to(".content ",{
 //     el: document.querySelector('.mainparent'),
 //     smooth: true
 // });
+
+
+var elems = document.querySelectorAll(".elem")
+var hoverimagespage = document.querySelector(".hoverimagespage")
+elems.forEach(function(e){
+    e.addEventListener('mouseenter',function(){
+     var bgimg  =   e.getAttribute("data-img")
+      hoverimagespage.style.backgroundImage =`url(${bgimg})`
+    })
+    e.addEventListener('mouseleave',function(){
+        var bgimg  =   e.getAttribute("data-img")
+         hoverimagespage.style.backgroundImage =``
+       })
+})
