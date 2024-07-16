@@ -27,3 +27,9 @@ tl.to(".bottom-h1",{
 tl.to(".content ",{
     marginTop:"0%",
 },"a")
+
+
+// const scroll = new LocomotiveScroll({
+//     el: document.querySelector('.mainparent'),
+//     smooth: true
+// });
