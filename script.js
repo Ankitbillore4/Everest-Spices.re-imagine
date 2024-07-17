@@ -73,7 +73,6 @@ gsap.to(".tandurimasalaimage",{
 
 gsap.to(".tandurimasalaimage",{
   scale:"0.8",
- 
     scrollTrigger:{
         trigger:".page5 h1",
         scroller:"body",
