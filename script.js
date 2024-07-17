@@ -47,3 +47,42 @@ elems.forEach(function(e){
          hoverimagespage.style.backgroundImage =``
        })
 })
+
+
+
+
+
+
+
+// MASALA SCROLLING...
+
+gsap.to(".tandurimasalaimage",{
+   
+    scrollTrigger:{
+        trigger:".tandurimasalaimage",
+        scroller:"body",
+        markers:true,
+        start:"top 15%",
+        end:"top -316%",
+        scrub:2,
+        pin:true,
+    }
+})
+
+
+
+gsap.to(".tandurimasalaimage",{
+  scale:"0.8",
+ 
+    scrollTrigger:{
+        trigger:".page5 h1",
+        scroller:"body",
+        markers:true,
+        start:"top 316%",
+        end:"top -316%",
+        scrub:2,
+        pin:true,
+    }
+})
+
+
