@@ -8,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
 </head>
 
@@ -30,15 +31,88 @@
                 </div>
             </div>
 
-            <div class="main h-[100vh] bg-green-200 w-[100vw]">
+            <div class="main h-[100vh]  w-[100vw]">
+               
 
-                <div class="page1  h-[100vh]  w-[100vw] flex justify-center items-center">
+                <div class="page1  h-[100vh]  w-[100vw] flex flex-col justify-center items-center relative">
 
-                    <video class="h-full w-full object-cover object-center" src="./videoplayback.mp4" autoplay loop
-                        muted>
-                    </video>
+                <div class="video h-[100vh] w-full object-cover">
+                    <video class="h-[100vh] w-full object-cover object-center" src="./videoplayback.mp4" autoplay loop muted> </video>
+                </div>
+                
+                <div class="datauppervideo absolute h-[100%] w-full bottom-[0%] left-[4%] flex absolute items-end justify-center">
+                   <div class="absolute top-[12vw] left-[30vw] font-bold"><h1 class="text-white text-[3vw]"><span class="text-[red] text-[6vw]">E</span>VEREST KA <span class="text-[red]">TADKA</span></h1></div>
+                       <div class="maincontainer ml-[-5vw] ">
+                        <div class="thecard mt-[-6vw]">
+                            <div class="thefront"><img class=" object-cover" src="https://www.everestfoods.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/09/tandoori-chiken-masala.png.webp" alt=""></div>
+                            <div class="theback"><img class=" object-cover" src="https://www.everestfoods.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/09/front-9.png.webp" alt=""></div>
+                        </div>
+                       </div>
+                       <div class="maincontainer ml-[-5vw] ">
+                        <div class="thecard mt-[-3vw]">
+                            <div class="thefront"><img class=" object-cover" src="https://www.everestfoods.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/09/front-13.png.webp" alt=""></div>
+                            <div class="theback"><img class=" object-cover" src="https://www.everestfoods.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/09/chhole-masala.png.webp" alt=""></div>
+                        </div>
+                       </div>
+                       <div class="maincontainer  ml-[-5vw]">
+                        <div class="thecard mt-[vw]">
+                            <div class="thefront"><img class=" object-cover" src="https://www.everestfoods.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/09/pav-bhaji-masala.png.webp" alt=""></div>
+                            <div class="theback"><img class=" object-cover" src="https://www.everestfoods.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/09/front-3.png.webp" alt=""></div>
+                        </div>
+                       </div>
+                       <div class="maincontainer  ml-[-5vw] z-30">
+                        <div class="thecard mt-[2vw]">
+                            <div class="thefront"><img class=" object-cover" src="https://www.everestfoods.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/09/front-2-2.png.webp" alt=""></div>
+                            <div class="theback"><img class=" object-cover" src="https://www.everestfoods.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/09/king-masala.png.webp" alt=""></div>
+                        </div>
+                       </div>
+                       <div class="maincontainer  ml-[-5vw] z-20">
+                        <div class="thecard mt-[0.5vw]">
+                            <div class="thefront"><img class=" object-cover" src="https://www.everestfoods.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/09/ambhar-masala.png.webp" alt=""></div>
+                            <div class="theback"><img class=" object-cover" src="https://www.everestfoods.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/09/front-4.png.webp" alt=""></div>
+                        </div>
+                       </div>
+                       <div class="maincontainer  ml-[-5vw] z-10">
+                        <div class="thecard mt-[-2vw]">
+                            <div class="thefront"><img class=" object-cover" src="https://www.everestfoods.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/09/front-5.png.webp" alt=""></div>
+                            <div class="theback"><img class=" object-cover" src="https://www.everestfoods.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/09/front-7.png.webp" alt=""></div>
+                        </div>
+                       </div>
+                       <div class="maincontainer  ml-[-4vw]">
+                        <div class="thecard mt-[-4.2vw]">
+                            <div class="thefront"><img class=" object-cover" src="https://www.everestfoods.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/09/meat-masala.png.webp" alt=""></div>
+                            <div class="theback"><img class=" object-cover" src="https://www.everestfoods.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/09/front-11.png.webp" alt=""></div>
+                        </div>
+                       </div>
+                </div>
+
                 </div>
             </div>
+
+
+
+            <div class="page3 h-[100vh]  bg-green-800">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper h-[100%] w-full">
+                        <div class="swiper-slide"><img class=" " src="./srk , amit2.webp" alt=""></div>
+                        <div class="swiper-slide"><img class=" " src="./srk , amit3.webp" alt=""></div>
+                        <div class="swiper-slide"><img class=" " src="./srk ,amit1.webp" alt=""></div>
+
+                    </div>
+                    <!-- <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div> -->
+                    <div class="autoplay-progress">
+                        <svg viewBox="0 0 48 48">
+                            <circle cx="24" cy="24" r="20"></circle>
+                        </svg>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+
+
 
 
             <div
@@ -63,13 +137,47 @@
             </div>
 
 
-            <div class="page3 h-[110vh] w-[100vw] bg-green-800">
 
 
 
+            <div class="page4 h-[100vh] w-[100vw] relative flex flex-col items-center  bg-black text-white">
+                <h1 class="text-[4vw] absolute top-[2%] font-bold">A Taste Of Our Legacy!</h1>
+                <div class="boxx h-[80%] w-[90%]  absolute bottom-[3%] ">
+                    <div class="boxline1 h-[50%] w-full  flex justify-around border-b-2  border-white">
+                        <div class="boxx1 h-full w-[33%]  border-r-2  border-white">
+                            <h1 class="text-[3vw] text-center pt-[3vw]">20 Million</h1>
+                            <h1 class="text-center text-[1.4vw]">Households use Everest products  <br>every day</h1>
+                        </div>
+                        <div class="boxx2 h-full w-[33%]  border-r-2  border-white">
+                            <h1 class="text-[3vw] text-center pt-[3vw]">3.705 billion</h1>
+                            <h1 class="text-center text-[1.4vw]">Packs of Everest products are <br>sold each year</h1>
+                        </div>
+                        <div class="boxx3 h-full w-[33%] ">
+                            <h1 class="text-[3vw] text-center pt-[3vw]">6.2 lac</h1>
+                            <h1 class="text-center text-[1.4vw]">Outlets sell Everest products <br>across 1000 small towns and <br>cities in India</h1>
+                        </div>
 
+                    </div>
+                    <div class="boxxline2 h-[50%] w-full flex justify-around ">
+                        <div class="boxx1 h-full w-[33%]  border-r-2  border-white">
+                            <h1 class="text-[3vw] text-center pt-[3vw]">80+</h1>
+                            <h1 class="text-center text-[1.4vw]">Countries world wide products <br>available</h1>
+                        </div>
+                        <div class="boxx2 h-full w-[33%]  border-r-2  border-white">
+                            <h1 class="text-[3vw] text-center pt-[3vw]">8 times</h1>
+                            <h1 class="text-center text-[1.4vw]">The brand has achieved <br>‘Superbrand’ status eight times <br>(2003, 2006, 2009, 2012, 2015,<br> 2017, 2019 & 2021)</h1>
+                        </div>
+                        <div class="boxx3 h-full w-[33%] ">
+                            <h1 class="text-[3vw] text-center pt-[3vw]">52+</h1>
+                            <h1 class="text-center text-[1.4vw]">Pure and blended spices are part of <br>Everest's 200+ product <br>range & sizes</h1>
+                        </div>
+                    </div>
+                </div>
+            
             </div>
-            <div class="page4 h-[110vh] w-[100vw] bg-green-400"></div>
+
+
+
 
             <div
                 class="page5 h-[80vh] w-[100vw] bg-green-600 bg-[url(https://media.istockphoto.com/id/2013260433/photo/food-cooking-background-on-black-stone-table.webp?b=1&s=170667a&w=0&k=20&c=rsmE63L76Ws0LxAdTxT0BOibozS2U8mkFTNvDwvLniU=)] ; bg-cover bg-center flex items-center ">
@@ -306,18 +414,32 @@
 
                 <div class="h-[100%] w-[40%] ">
                     <h1 class="text-[3.5vw] text-center mt-[2vw]">Our Recipe For Success</h1>
-                    <p class="text-center ml-[5vw] text-[1.3vw] w-[70%] mt-[2vw] mb-[2vw]">Everest is India’s No.1 spice brand that offers a wide range of whole spices and blends. With
+                    <p class="text-center ml-[5vw] text-[1.3vw] w-[70%] mt-[2vw] mb-[2vw]">Everest is India’s No.1 spice
+                        brand that offers a wide range of whole spices and blends. With
                         over 52 years of experience, Everest maintains the best standards of purity, freshness and
                         authenticity in every pack. Everest’s great taste of purity is backed by research, innovation
                         and technology.</p>
-                        <button class="bg-white  text-black ml-[15vw] px-[1vw] text-[1.2vw] text-semibold rounded-lg py-[0.5vw] mt-[2vw]">Explor More</button>
+                    <button
+                        class="bg-white  text-black ml-[15vw] px-[1vw] text-[1.2vw] text-semibold rounded-lg py-[0.5vw] mt-[2vw]">Explor
+                        More</button>
                 </div>
 
 
 
             </div>
 
-            <div class="h-[100vh] w-full bg-pink-400 z-20"></div>
+            <div class="h-[100vh] w-full bg-pink-400 z-20">
+                <div class="namemoving h-[17vw] w-full bg-black flex items-center">
+                    <div class="tasteee h-[70%] w-full text-white text-[5vw] flex items-center gap-[2vw]">
+                        <h1>#TasteMeinBestEverest</h1>
+                        <h1>#TasteMeinBestEverest</h1>
+                        <h1>#TasteMeinBestEverest</h1>
+                        <h1>#TasteMeinBestEverest</h1>
+                        <h1>#TasteMeinBestEverest</h1>
+                        
+                    </div>
+                </div>
+            </div>
         </div>
 
 
@@ -328,6 +450,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>

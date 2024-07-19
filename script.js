@@ -29,56 +29,103 @@
 // },"a")
 
 
+// images mouse hover slide continous start...
+var elems = document.querySelectorAll(".elem")
+var hoverimagespage = document.querySelector(".hoverimagespage")
+elems.forEach(function(e){
+    e.addEventListener('mouseenter',function(){
+     var bgimg  =   e.getAttribute("data-img")
+      hoverimagespage.style.backgroundImage =`url(${bgimg})`
+    })
+    e.addEventListener('mouseleave',function(){
+        var bgimg  =   e.getAttribute("data-img")
+         hoverimagespage.style.backgroundImage =``
+       })
+})
 
-// var elems = document.querySelectorAll(".elem")
-// var hoverimagespage = document.querySelector(".hoverimagespage")
-// elems.forEach(function(e){
-//     e.addEventListener('mouseenter',function(){
-//      var bgimg  =   e.getAttribute("data-img")
-//       hoverimagespage.style.backgroundImage =`url(${bgimg})`
-//     })
-//     e.addEventListener('mouseleave',function(){
-//         var bgimg  =   e.getAttribute("data-img")
-//          hoverimagespage.style.backgroundImage =``
-//        })
-// })
-
-
-
-
+// images mouse hover slide continous end...
 
 
 
 
 
-// // MASALA SCROLLING...
-
-// gsap.to(".tandurimasalaimage",{
-//     scale:"0.9",
-//     scrollTrigger:{
-//         trigger:".tandurimasalaimage",
-//         scroller:"body",
-//         markers:true,
-//         start:"top 15%",
-//         end:"top -319%",
-//         scrub:2,
-//         pin:true,
-//     }
-// })
 
 
 
-// gsap.to(".tandurimasalaimage",{
+// // MASALA SCROLLING start...
+
+gsap.to(".tandurimasalaimage",{
+    scale:"0.9",
+    scrollTrigger:{
+        trigger:".tandurimasalaimage",
+        scroller:"body",
+        markers:true,
+        start:"top 15%",
+        end:"top -200%",
+        scrub:2,
+        pin:true,
+    }
+})
+
+
+
+gsap.to(".tandurimasalaimage",{
     
-//     scrollTrigger:{
-//         trigger:".page5 h1",
-//         scroller:"body",
-//         markers:true,
-//         start:"top 316%",
-//         end:"top -316%",
-//         scrub:2,
-//         pin:true,
-//     }
-// })
+    scrollTrigger:{
+        trigger:".page5 h1",
+        scroller:"body",
+        markers:true,
+        start:"top 316%",
+        end:"top -316%",
+        scrub:2,
+        pin:true,
+    }
+})
+
+// // MASALA SCROLLING end...
+
+
+
+
+
+
+
+function run(){
+    
+}
+const progressCircle = document.querySelector(".autoplay-progress svg");
+const progressContent = document.querySelector(".autoplay-progress span");
+let swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  on: {
+    autoplayTimeLeft(s, time, progress) {
+      progressCircle.style.setProperty("--progress", 1 - progress);
+      progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+    }
+  }
+});
+run()
+
+
+
+
+
+
+
+
+
 
 

@@ -21,6 +21,8 @@ width:100%;
 
 
 
+/* elem start... */
+
 .moving-in{
   animation-name: moving;
   animation-duration: 3s;
@@ -47,7 +49,6 @@ width:100%;
 
 .elem:hover .moving{
   transform: translate(0,-45%) scaleY(1);
- 
 
 }
 
@@ -67,6 +68,28 @@ width:100%;
   transform: translate(-50%,-50%);
 }
 
+/* elem end ...... */
+
+
+
+
+
+.tasteee{
+  animation-name: moveee;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+
+@keyframes moveee {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-100%);
+  }
+}
 
 
 
@@ -86,6 +109,15 @@ width:100%;
 
 
 
+
+
+
+
+
+
+
+
+/* box start rotate.... */
 .container {
   /* display: flex;
     justify-content: center;
@@ -168,3 +200,166 @@ span img {
   height: 100%;
 
 }
+
+/* box rotate end... */
+
+
+
+
+
+
+
+
+
+
+/* swipper js css start .... */
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.yourswiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: var(--swiper-theme-color);
+  fill: none;
+  stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
+
+/* swiper js css end.... */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vooo card waliiiii... */
+
+.maincontainer{
+  position: relative;
+  height: 26.2vw;
+  width: 17.1vw;
+  /* background: greenyellow; */
+}
+
+.thecard{
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+  /* background: gray; */
+}
+
+.thefront{
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  object-position: center;
+  backface-visibility: hidden;
+  /* background: red; */
+  /* color: aqua; */
+}
+.theback{
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  object-position: center;
+  backface-visibility: hidden;
+  /* background: rgb(4, 0, 255); */
+  color: aqua;
+  transform: rotateY(-180deg);
+}
+
+.thecard:hover{
+  transform: rotateY(-180deg);
+  transition: all 1s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
