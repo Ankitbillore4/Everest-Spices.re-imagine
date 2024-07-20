@@ -386,5 +386,52 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 
 
+.respons h1{
+  cursor: pointer;
+}
+
+.respons h1::after{
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  background-color: #fff;
+  transition: 0.2s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0);
+
+}
+
+.respons h1:hover::after{
+  transform: scaleX(1);
+
+}
+
+
+
+
+  .responsivenav{
+    background: rgba(17, 16, 16, 0.403);
+  box-shadow: 0 8px 32px 0 rgba(253, 254, 255, 0.571);
+  backdrop-filter: blur( 2px );
+  -webkit-backdrop-filter: blur( 2px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+
+
+/* 
+  fontsssssss..... */
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+  .respons h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
 

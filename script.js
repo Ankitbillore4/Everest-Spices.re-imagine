@@ -1,5 +1,74 @@
 
 
+
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+// Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
+
+const locoScroll = new LocomotiveScroll({
+  el: document.querySelector(".sabsemainparent"),
+  smooth: true
+});
+// each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
+locoScroll.on("scroll", ScrollTrigger.update);
+
+// tell ScrollTrigger to use these proxy methods for the ".smooth-scroll" element since Locomotive Scroll is hijacking things
+ScrollTrigger.scrollerProxy(".sabsemainparent", {
+  scrollTop(value) {
+    return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
+  }, // we don't have to define a scrollLeft because we're only scrolling vertically.
+  getBoundingClientRect() {
+    return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
+  },
+  // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
+  pinType: document.querySelector(".sabsemainparent").style.transform ? "transform" : "fixed"
+});
+
+
+
+
+// each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
+ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+
+// after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
+ScrollTrigger.refresh();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // images mouse hover slide continous start...
 var elems = document.querySelectorAll(".elem")
 var hoverimagespage = document.querySelector(".hoverimagespage")
@@ -24,7 +93,7 @@ gsap.to(".tandurimasalaimage",{
     scale:"0.9",
     scrollTrigger:{
         trigger:".tandurimasalaimage",
-        scroller:"body",
+        scroller:".sabsemainparent",
       
         start:"top 15%",
         end:"top -193%",
@@ -39,7 +108,7 @@ gsap.to(".tandurimasalaimage",{
     
     scrollTrigger:{
         trigger:".page5 h1",
-        scroller:"body",
+        scroller:".sabsemainparent",
        
         start:"top 316%",
         end:"top -316%",
@@ -162,8 +231,8 @@ gsap.from(".swiper",{
   opacity:-1,
   scrollTrigger:{
     trigger:".page3",
-    scroller:"body",
-    markers:true,
+    scroller:".sabsemainparent",
+    
     start:"top 65%"
   }
 })
@@ -172,8 +241,8 @@ gsap.from(".swiper",{
 const t = gsap.timeline({
   scrollTrigger:{
     trigger:".cholemasala",
-    scroller:"body",
-    markers:true,
+    scroller:".sabsemainparent",
+    
     scrub:2
   }
 })
@@ -202,9 +271,9 @@ t.from(".page2 p",{
 
 const a = gsap.timeline({
   scrollTrigger:{
-    scroller:"body",
+    scroller:".sabsemainparent",
     trigger:".boxx",
-    markers:true,
+    
    start:"top 70%",
     
   }
@@ -226,7 +295,7 @@ a.from(".boxline1",{
 
 const c = gsap.timeline({
   scrollTrigger:{
-    scroller:"body",
+    scroller:".sabsemainparent",
     trigger:".page5",
    
    start:"top 70%",
@@ -248,9 +317,9 @@ c.from(".page5 .box3",{
 
 const d = gsap.timeline({
   scrollTrigger:{
-    scroller:"body",
+    scroller:".sabsemainparent",
     trigger:".hoverimagespage",
-    markers:true,
+    
     start:"top 70%"
   }
 })
@@ -266,7 +335,7 @@ d.from(".elem h1",{
 
 const e = gsap.timeline({
   scrollTrigger:{
-    scroller:"body",
+    scroller:".sabsemainparent",
     trigger:".imageslide",
     start:"top 70%",
 
@@ -289,3 +358,90 @@ e.from(".rightbox h1",{
   duration:3,
   opacity:0
 },"a")
+
+
+
+
+// responsivenave...
+function sideMenu(){
+  const sidebar = gsap.timeline()
+
+sidebar.to(".responsivenav",{
+ right:0,
+ duration:1,
+ })
+  
+
+sidebar.from(".responsivenav .h1",{
+  x:300,
+  duration:2,
+  opacity:-1,
+  stagger:0.1,
+},"-=2")
+
+
+
+sidebar.from(".responsivenav img",{
+  y:300,
+  duration:2,
+  opacity:-1
+},"-=1.8")
+
+sidebar.pause()
+
+
+
+const menu = document.querySelector(".menu")
+const cross = document.querySelector(".cross")
+
+
+menu.addEventListener("click",function(){
+  sidebar.play()
+})
+
+cross.addEventListener("click",function(){
+  sidebar.reverse()
+})
+}
+sideMenu()
+
+// responsivenave...
+
+
+
+
+const G = gsap.timeline({
+  scrollTrigger:{
+    scroller:".sabsemainparent",
+    trigger:".Tasteeto",
+    
+    start:"top 70%"
+  }
+})
+
+G.from(".Tasteeto1",{
+  y:300,
+  duration:2,
+  opacity:0,
+  stagger:0.2
+})
+
+
+G.from(".Tasteeto2",{
+  y:300,
+  duration:2,
+  opacity:0,
+  stagger:0.2
+},"-=2.3")
+
+
+gsap.from(".footer",{
+  y:250,
+  opacity:-1,
+  duration:2,
+  scrollTrigger:{
+    scroller:".sabsemainparent",
+    trigger:"Tasteeto2",
+    start:"top 90%",
+  }
+})
