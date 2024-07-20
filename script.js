@@ -129,3 +129,30 @@ run()
 
 
 
+
+
+
+
+
+
+
+
+function mouseimagemove(){
+  document.addEventListener("mousemove",function(details){
+    document.querySelectorAll(".imgg").forEach((elem)=>{
+      const position = elem.getAttribute("value")
+      const X = (window.innerWidth - details.clientX * position)/50;
+      const Y = (window.innerHeight - details.clientY * position)/50;
+  
+       elem.style.transform = `translateX(${X}px) translateY(${Y}px)`
+    })
+  })
+   
+}
+
+mouseimagemove()
+
+
+
+
+
