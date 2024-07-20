@@ -299,13 +299,12 @@ body {
 
 
 
-/* vooo card waliiiii... */
+/* vooo card waliiiii... 
 
 .maincontainer{
   position: relative;
   height: 26.2vw;
   width: 17.1vw;
-  /* background: greenyellow; */
 }
 
 .thecard{
@@ -314,7 +313,7 @@ body {
   width: 90%;
   transform-style: preserve-3d;
   transition: all 0.5s ease;
-  /* background: gray; */
+  
 }
 
 .thefront{
@@ -324,8 +323,7 @@ body {
   object-fit: cover;
   object-position: center;
   backface-visibility: hidden;
-  /* background: red; */
-  /* color: aqua; */
+
 }
 .theback{
   position: absolute;
@@ -334,7 +332,7 @@ body {
   object-fit: cover;
   object-position: center;
   backface-visibility: hidden;
-  /* background: rgb(4, 0, 255); */
+
   color: aqua;
   transform: rotateY(-180deg);
 }
@@ -344,23 +342,45 @@ body {
   transition: all 1s ease-in-out;
 }
 
-
-
-
-
-
-
-
-
-
-
 .xxxx .img1{
   transform: translate(-50%,0%);
 }
+*/
 
 
 
 
+.navbar{
+  background: rgba( 255, 255, 255, 0.0 );
+box-shadow: 0 8px 32px 0 rgba(253, 254, 255, 0.37);
+backdrop-filter: blur( 2px );
+-webkit-backdrop-filter: blur( 2px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.navbar h1{
+  cursor: pointer;
+}
+
+.navbar h1::after{
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  background-color: #fff;
+  transition: 0.2s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0);
+
+}
+
+.navbar h1:hover::after{
+  transform: scaleX(1);
+
+}
 
 
 

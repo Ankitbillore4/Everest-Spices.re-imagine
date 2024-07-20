@@ -1,33 +1,4 @@
 
-// var tl= gsap.timeline({scrollTrigger:{
-//     trigger:"body",
-//     start:"55% 50%",
-//     end:"100% 50%",
-//     scrub:2,
-//     pin:true,
-
-// }})
-
-// tl.to(".top",{
-//     top:"-50%"
-// },"a")
-
-// tl.to(".bottom",{
-//     bottom:"-50%",
-// },"a")
-
-// tl.to(".top-h1",{
-//     top:"100%",
-// },"a")
-
-// tl.to(".bottom-h1",{
-//     top:"-80%",
-// },"a")
-
-// tl.to(".content ",{
-//     marginTop:"0%",
-// },"a")
-
 
 // images mouse hover slide continous start...
 var elems = document.querySelectorAll(".elem")
@@ -47,11 +18,6 @@ elems.forEach(function(e){
 
 
 
-
-
-
-
-
 // // MASALA SCROLLING start...
 
 gsap.to(".tandurimasalaimage",{
@@ -59,9 +25,9 @@ gsap.to(".tandurimasalaimage",{
     scrollTrigger:{
         trigger:".tandurimasalaimage",
         scroller:"body",
-        markers:true,
+      
         start:"top 15%",
-        end:"top -200%",
+        end:"top -193%",
         scrub:2,
         pin:true,
     }
@@ -74,7 +40,7 @@ gsap.to(".tandurimasalaimage",{
     scrollTrigger:{
         trigger:".page5 h1",
         scroller:"body",
-        markers:true,
+       
         start:"top 316%",
         end:"top -316%",
         scrub:2,
@@ -86,9 +52,7 @@ gsap.to(".tandurimasalaimage",{
 
 
 
-
-
-
+// swiper...
 
 function run(){
     
@@ -120,22 +84,7 @@ let swiper = new Swiper(".mySwiper", {
 run()
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// mousemove imageee...
 
 function mouseimagemove(){
   document.addEventListener("mousemove",function(details){
@@ -154,5 +103,189 @@ mouseimagemove()
 
 
 
+// navvvv...
 
 
+// const navbar = document.querySelector(".navbar")
+// const body = document.querySelector("body")
+
+// body.addEventListener("wheel",function(dets){
+//     if(dets.deltaY < 0){
+//      navbar.classList.add("fixed")
+//       console.log("ulta");
+//     }else{
+//         navbar.classList.remove("fixed")
+//         console.log("sidda");
+//     }
+// })
+
+
+
+// gsap animation no holee...
+
+
+
+
+const tl= gsap.timeline()
+
+tl.from(".navbar",{
+  y:-200,
+  duration:1.5
+})
+tl.from(".navbar h1",{
+  y:-200,
+  duration:2,
+  opacity:-1,
+  stagger:0.2,
+},"-=1.6")
+
+tl.from(".h1span",{
+  y:400,
+  duration:2,
+  opacity:-1,
+  stagger:0.1
+},"-=3")
+
+
+tl.from(".datauppervideo .maincontainer",{
+  x:-300,
+  duration:2,
+  opacity:-1,
+  stagger:0.2,
+},"-=3")
+
+
+
+gsap.from(".swiper",{
+  y:300,
+  duration:1.2,
+  opacity:-1,
+  scrollTrigger:{
+    trigger:".page3",
+    scroller:"body",
+    markers:true,
+    start:"top 65%"
+  }
+})
+
+
+const t = gsap.timeline({
+  scrollTrigger:{
+    trigger:".cholemasala",
+    scroller:"body",
+    markers:true,
+    scrub:2
+  }
+})
+
+
+t.from(".cholemasala",{
+  x:-250,
+  rotate:15,
+  duration:2,
+},"a")
+
+t.from(".pavbhaji",{
+  x:250,
+  rotate:-15,
+  duration:2,
+},"a")
+
+
+t.from(".page2 p",{
+  y:250,
+  opacity:-1,
+  duration:2,
+},"a")
+
+
+
+const a = gsap.timeline({
+  scrollTrigger:{
+    scroller:"body",
+    trigger:".boxx",
+    markers:true,
+   start:"top 70%",
+    
+  }
+})
+a.from(".boxx1",{
+  x:300,
+  duration:2,
+  opacity:0,
+  stagger:0.2,
+  start:"top 80%"
+},"a")
+a.from(".boxline1",{
+  duration:2,
+  rotate:15,
+  opacity:-1,
+},"a")
+
+
+
+const c = gsap.timeline({
+  scrollTrigger:{
+    scroller:"body",
+    trigger:".page5",
+   
+   start:"top 70%",
+    
+  }
+})
+
+c.from(".page5 .box1",{
+  x:-200,
+  opacity:0,
+  duration:2,
+},"a")
+c.from(".page5 .box3",{
+  x:200,
+  opacity:0,
+  duration:2,
+},"a")
+
+
+const d = gsap.timeline({
+  scrollTrigger:{
+    scroller:"body",
+    trigger:".hoverimagespage",
+    markers:true,
+    start:"top 70%"
+  }
+})
+
+d.from(".elem h1",{
+  x:400,
+  duration:2,
+  opacity:-1,
+  stagger:0.2,
+})
+
+
+
+const e = gsap.timeline({
+  scrollTrigger:{
+    scroller:"body",
+    trigger:".imageslide",
+    start:"top 70%",
+
+  }
+})
+
+e.from(".imageslide .leftbox",{
+  x:-400,
+  duration:3,
+  opacity:-1
+},"a")
+e.from(".imageslide .rightbox",{
+  x:400,
+  duration:3,
+  opacity:-1
+},"a")
+
+e.from(".rightbox h1",{
+  x:400,
+  duration:3,
+  opacity:0
+},"a")
