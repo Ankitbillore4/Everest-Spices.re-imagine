@@ -12,7 +12,9 @@ overflow-x: hidden!important;
 .sabsemainparent{
   overflow-x: hidden!important;
 }
-
+.xxxx::-webkit-scrollbar{
+  display: none!important;
+}
 
 @font-face {
   font-family: robotoo;
