@@ -445,3 +445,13 @@ gsap.from(".footer",{
     start:"top 90%",
   }
 })
+
+document.querySelector(".menu").addEventListener("click",()=>{
+  document.querySelector(".menubar").style.transform = `translateX(0%)`
+
+})
+
+document.querySelector(".menubar .cross").addEventListener("click",()=>{
+  document.querySelector(".menubar").style.transform = `translateX(-100%)`
+
+})
