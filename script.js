@@ -90,7 +90,7 @@ elems.forEach(function(e){
 // // MASALA SCROLLING start...
 
 gsap.to(".tandurimasalaimage",{
-    scale:"0.9",
+    scale:"0.8",
     scrollTrigger:{
         trigger:".tandurimasalaimage",
         scroller:".sabsemainparent",
@@ -199,18 +199,18 @@ const tl= gsap.timeline()
 
 tl.from(".navbar",{
   y:-200,
-  duration:1.5
+  duration:1
 })
 tl.from(".navbar h1",{
   y:-200,
-  duration:2,
+  duration:1.5,
   opacity:-1,
   stagger:0.2,
 },"-=1.6")
 
 tl.from(".h1span",{
   y:400,
-  duration:2,
+  duration:1.5,
   opacity:-1,
   stagger:0.1
 },"-=3")
@@ -218,7 +218,7 @@ tl.from(".h1span",{
 
 tl.from(".datauppervideo .maincontainer",{
   x:-300,
-  duration:2,
+  duration:1.5,
   opacity:-1,
   stagger:0.2,
 },"-=3")
@@ -227,7 +227,7 @@ tl.from(".datauppervideo .maincontainer",{
 
 gsap.from(".swiper",{
   y:300,
-  duration:1.2,
+  duration:1,
   opacity:-1,
   scrollTrigger:{
     trigger:".page3",
@@ -251,20 +251,20 @@ const t = gsap.timeline({
 t.from(".cholemasala",{
   x:-250,
   rotate:15,
-  duration:2,
+  duration:1.5,
 },"a")
 
 t.from(".pavbhaji",{
   x:250,
   rotate:-15,
-  duration:2,
+  duration:1.5,
 },"a")
 
 
 t.from(".page2 p",{
   y:250,
   opacity:-1,
-  duration:2,
+  duration:1.5,
 },"a")
 
 
@@ -280,13 +280,13 @@ const a = gsap.timeline({
 })
 a.from(".boxx1",{
   x:300,
-  duration:2,
+  duration:1.2,
   opacity:0,
   stagger:0.2,
   start:"top 80%"
 },"a")
 a.from(".boxline1",{
-  duration:2,
+  duration:1.2,
   rotate:15,
   opacity:-1,
 },"a")
@@ -306,7 +306,7 @@ const c = gsap.timeline({
 c.from(".page5 .box1",{
   x:-200,
   opacity:0,
-  duration:2,
+  duration:1.5,
 },"a")
 c.from(".page5 .box3",{
   x:200,
@@ -326,7 +326,7 @@ const d = gsap.timeline({
 
 d.from(".elem h1",{
   x:400,
-  duration:2,
+  duration:1.5,
   opacity:-1,
   stagger:0.2,
 })
@@ -344,18 +344,18 @@ const e = gsap.timeline({
 
 e.from(".imageslide .leftbox",{
   x:-400,
-  duration:3,
+  duration:2,
   opacity:-1
 },"a")
 e.from(".imageslide .rightbox",{
   x:400,
-  duration:3,
+  duration:2,
   opacity:-1
 },"a")
 
 e.from(".rightbox h1",{
   x:400,
-  duration:3,
+  duration:2,
   opacity:0
 },"a")
 
@@ -368,13 +368,13 @@ function sideMenu(){
 
 sidebar.to(".responsivenav",{
  right:0,
- duration:1,
+ duration:0.8,
  })
   
 
 sidebar.from(".responsivenav .h1",{
   x:300,
-  duration:2,
+  duration:1.5,
   opacity:-1,
   stagger:0.1,
 },"-=2")
@@ -383,7 +383,7 @@ sidebar.from(".responsivenav .h1",{
 
 sidebar.from(".responsivenav img",{
   y:300,
-  duration:2,
+  duration:1.5,
   opacity:-1
 },"-=1.8")
 
@@ -421,7 +421,7 @@ const G = gsap.timeline({
 
 G.from(".Tasteeto1",{
   y:300,
-  duration:2,
+  duration:1.5,
   opacity:0,
   stagger:0.2
 })
@@ -429,7 +429,7 @@ G.from(".Tasteeto1",{
 
 G.from(".Tasteeto2",{
   y:300,
-  duration:2,
+  duration:1.5,
   opacity:0,
   stagger:0.2
 },"-=2.3")
@@ -438,7 +438,7 @@ G.from(".Tasteeto2",{
 gsap.from(".footer",{
   y:250,
   opacity:-1,
-  duration:2,
+  duration:1.5,
   scrollTrigger:{
     scroller:".sabsemainparent",
     trigger:"Tasteeto2",

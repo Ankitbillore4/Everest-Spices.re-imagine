@@ -9,6 +9,9 @@ height:100%;
 width:100%;
 }
 
+
+
+
 @font-face {
   font-family: robotoo;
   src: url(./Roboto_Slab.zip);
@@ -19,7 +22,9 @@ width:100%;
 }
 
 
-
+.responsivenav{
+  
+}
 
 /* elem start... */
 
@@ -421,6 +426,11 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   border: 1px solid rgba( 255, 255, 255, 0.18 );
   }
 
+
+
+  .datauppervideo span{
+    display: inline-block
+  }
 
 /* 
   fontsssssss..... */
