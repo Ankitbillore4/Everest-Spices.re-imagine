@@ -94,7 +94,7 @@ gsap.to(".tandurimasalaimage",{
     scrollTrigger:{
         trigger:".tandurimasalaimage",
         scroller:".sabsemainparent",
-      
+      markers:true,
         start:"top 15%",
         end:"top -193%",
         scrub:2,
@@ -109,7 +109,7 @@ gsap.to(".tandurimasalaimage",{
     scrollTrigger:{
         trigger:".page5 h1",
         scroller:".sabsemainparent",
-       
+        markers:true,
         start:"top 316%",
         end:"top -316%",
         scrub:2,
@@ -232,7 +232,7 @@ gsap.from(".swiper",{
   scrollTrigger:{
     trigger:".page3",
     scroller:".sabsemainparent",
-    
+    markers:true,
     start:"top 65%"
   }
 })
@@ -242,7 +242,7 @@ const t = gsap.timeline({
   scrollTrigger:{
     trigger:".cholemasala",
     scroller:".sabsemainparent",
-    
+    markers:true,
     scrub:2
   }
 })
@@ -273,7 +273,7 @@ const a = gsap.timeline({
   scrollTrigger:{
     scroller:".sabsemainparent",
     trigger:".boxx",
-    
+    markers:true,
    start:"top 70%",
     
   }
@@ -297,7 +297,7 @@ const c = gsap.timeline({
   scrollTrigger:{
     scroller:".sabsemainparent",
     trigger:".page5",
-   
+    markers:true,
    start:"top 70%",
     
   }
@@ -319,7 +319,7 @@ const d = gsap.timeline({
   scrollTrigger:{
     scroller:".sabsemainparent",
     trigger:".hoverimagespage",
-    
+    markers:true,
     start:"top 70%"
   }
 })
@@ -414,7 +414,7 @@ const G = gsap.timeline({
   scrollTrigger:{
     scroller:".sabsemainparent",
     trigger:".Tasteeto",
-    
+    markers:true,
     start:"top 70%"
   }
 })
