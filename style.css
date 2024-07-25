@@ -8,16 +8,8 @@ html,
 body {
   height: 100%;
   width: 100%;
-  overflow-x: hidden !important;
 }
 
-.sabsemainparent {
-  overflow-x: hidden !important;
-}
-
-.xxxx::-webkit-scrollbar {
-  display: none !important;
-}
 
 @font-face {
   font-family: robotoo;
@@ -315,53 +307,6 @@ body {
 
 
 
-/* vooo card waliiiii... 
-
-.maincontainer{
-  position: relative;
-  height: 26.2vw;
-  width: 17.1vw;
-}
-
-.thecard{
-  position: absolute;
-  height: 90%;
-  width: 90%;
-  transform-style: preserve-3d;
-  transition: all 0.5s ease;
-  
-}
-
-.thefront{
-  position: absolute;
-  width: 90%;
-  height: 90%;
-  object-fit: cover;
-  object-position: center;
-  backface-visibility: hidden;
-
-}
-.theback{
-  position: absolute;
-  width: 90%;
-  height: 90%;
-  object-fit: cover;
-  object-position: center;
-  backface-visibility: hidden;
-
-  color: aqua;
-  transform: rotateY(-180deg);
-}
-
-.thecard:hover{
-  transform: rotateY(-180deg);
-  transition: all 1s ease-in-out;
-}
-
-.xxxx .img1{
-  transform: translate(-50%,0%);
-}
-*/
 
 
 
