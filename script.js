@@ -1,8 +1,5 @@
 
 
-
-
-
 gsap.registerPlugin(ScrollTrigger);
 
 // Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
@@ -34,37 +31,6 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
 // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
 ScrollTrigger.refresh();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -170,29 +136,6 @@ function gsapAnimation() {
   }
 
   mouseimagemove()
-
-
-
-  // navvvv...
-
-
-  // const navbar = document.querySelector(".navbar")
-  // const body = document.querySelector("body")
-
-  // body.addEventListener("wheel",function(dets){
-  //     if(dets.deltaY < 0){
-  //      navbar.classList.add("fixed")
-  //       console.log("ulta");
-  //     }else{
-  //         navbar.classList.remove("fixed")
-  //         console.log("sidda");
-  //     }
-  // })
-
-
-
-  // gsap animation no holee...
-
 
 
 
@@ -359,7 +302,6 @@ function gsapAnimation() {
     duration: 2,
     opacity: 0
   }, "a")
-
 
 
 
