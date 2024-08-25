@@ -369,7 +369,6 @@ function gsapAnimation() {
     stagger: 0.2
   })
 
-
   G.from(".Tasteeto2", {
     y: 300,
     duration: 1.5,
