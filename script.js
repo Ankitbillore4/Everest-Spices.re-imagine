@@ -333,7 +333,6 @@ function gsapAnimation() {
     sidebar.pause()
 
 
-
     const menu = document.querySelector(".menu")
     const cross = document.querySelector(".cross")
 
