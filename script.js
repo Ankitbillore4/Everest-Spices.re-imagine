@@ -313,7 +313,6 @@ function gsapAnimation() {
       duration: 0.8,
     })
 
-
     sidebar.from(".responsivenav .h1", {
       x: 300,
       duration: 1.5,
