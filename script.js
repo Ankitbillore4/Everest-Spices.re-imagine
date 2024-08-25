@@ -323,7 +323,6 @@ function gsapAnimation() {
     }, "-=2")
 
 
-
     sidebar.from(".responsivenav img", {
       y: 300,
       duration: 1.5,
