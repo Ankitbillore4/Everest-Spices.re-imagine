@@ -400,7 +400,6 @@ function gsapAnimation() {
   })
 }
 
-
 gsapAnimation()
 
 
