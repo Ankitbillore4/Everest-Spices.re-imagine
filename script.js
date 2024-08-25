@@ -350,7 +350,6 @@ function gsapAnimation() {
 
   // responsivenave...
 
-
   const G = gsap.timeline({
     scrollTrigger: {
       scroller: ".sabsemainparent",
