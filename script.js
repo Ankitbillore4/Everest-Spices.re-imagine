@@ -377,7 +377,6 @@ function gsapAnimation() {
     stagger: 0.2
   }, "-=2.3")
 
-
   gsap.from(".footer", {
     y: 250,
     opacity: -1,
