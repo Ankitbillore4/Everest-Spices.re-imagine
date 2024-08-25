@@ -304,7 +304,6 @@ function gsapAnimation() {
   }, "a")
 
 
-
   // responsivenave...
   function sideMenu() {
     const sidebar = gsap.timeline()
