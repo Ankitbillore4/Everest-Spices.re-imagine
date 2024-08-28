@@ -212,7 +212,6 @@ function gsapAnimation() {
   }, "a")
 
 
-
   const a = gsap.timeline({
     scrollTrigger: {
       scroller: ".sabsemainparent",
